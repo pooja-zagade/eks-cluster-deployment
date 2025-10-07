@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/pooja-zagade/eks-cluster-deployment.git'
+                git branch: 'main',
+            url: 'https://github.com/pooja-zagade/eks-cluster-deployment.git'
             }
         }
     
